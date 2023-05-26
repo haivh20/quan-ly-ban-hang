@@ -8,12 +8,12 @@ package com.raven.form;
  *
  * @author haiz2
  */
-public class Form_13 extends javax.swing.JPanel {
+public class ViewNhaSanXuat extends javax.swing.JPanel {
 
     /**
      * Creates new form Form_13
      */
-    public Form_13() {
+    public ViewNhaSanXuat() {
         initComponents();
     }
 

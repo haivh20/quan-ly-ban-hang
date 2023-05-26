@@ -8,12 +8,12 @@ package com.raven.form;
  *
  * @author haiz2
  */
-public class Form_14 extends javax.swing.JPanel {
+public class ViewMauSac extends javax.swing.JPanel {
 
     /**
-     * Creates new form Form_14
+     * Creates new form Form_11
      */
-    public Form_14() {
+    public ViewMauSac() {
         initComponents();
     }
 
@@ -30,7 +30,7 @@ public class Form_14 extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setText("Form_14");
+        jLabel1.setText("Form_11");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

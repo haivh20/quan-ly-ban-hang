@@ -1,14 +1,14 @@
 package com.raven.main;
 
 import com.raven.event.EventMenuSelected;
-import com.raven.form.Form_0;
-import com.raven.form.Form_1;
-import com.raven.form.Form_10;
-import com.raven.form.Form_11;
-import com.raven.form.Form_12;
-import com.raven.form.Form_13;
-import com.raven.form.Form_14;
-import com.raven.form.Form_2;
+import com.raven.form.ViewChatLieu;
+import com.raven.form.ViewKichThuoc;
+import com.raven.form.ViewLoaiSanPham;
+import com.raven.form.ViewMauSac;
+import com.raven.form.ViewNhaCungCap;
+import com.raven.form.ViewNhaSanXuat;
+import com.raven.form.ViewSanPham;
+import com.raven.form.ViewSanPhamChiTiet;
 import com.raven.form.Form_3;
 import com.raven.form.Form_4;
 import com.raven.form.Form_5;
@@ -21,17 +21,18 @@ import javax.swing.JComponent;
 public class Main extends javax.swing.JFrame {
 
     private Form_Home home;
-    private Form_1 form1;
-    private Form_2 form2;
+    private ViewKichThuoc viewKichThuoc;
+    private ViewSanPhamChiTiet viewSanPhamChiTiet;
     private Form_3 form3;
     private Form_4 form4;
     private Form_5 form5;
     private Form_6 form6;
-    private Form_10 form10;
-    private Form_11 form11;
-    private Form_12 form12;
-    private Form_13 form13;
-    private Form_14 form14;
+    private ViewLoaiSanPham viewLoaiSanPham;
+    private ViewMauSac viewMauSac;
+    private ViewNhaCungCap viewNhaCungCap;
+    private ViewNhaSanXuat viewNhaSanXuat;
+    private ViewSanPham viewSanPham;
+    private ViewChatLieu viewChatLieu;
 
     public Main() {
         initComponents();
@@ -39,17 +40,17 @@ public class Main extends javax.swing.JFrame {
         menu1.initMoving(Main.this);
 
         home = new Form_Home();
-        form1 = new Form_1();
-        form2 = new Form_2();
+        viewKichThuoc = new ViewKichThuoc();
+        viewSanPhamChiTiet = new ViewSanPhamChiTiet();
         form3 = new Form_3();
         form4 = new Form_4();
         form5 = new Form_5();
         form6 = new Form_6();
-        form10 = new Form_10();
-        form11 = new Form_11();
-        form12 = new Form_12();
-        form13 = new Form_13();
-        form14 = new Form_14();
+        viewLoaiSanPham = new ViewLoaiSanPham();
+        viewMauSac = new ViewMauSac();
+        viewNhaCungCap = new ViewNhaCungCap();
+        viewNhaSanXuat = new ViewNhaSanXuat();
+        viewSanPham = new ViewSanPham();
         menu1.addEventMenuSelected(new EventMenuSelected() {
             @Override
             public void selected(int index) {
@@ -59,9 +60,9 @@ public class Main extends javax.swing.JFrame {
                     setForm(new Form_Home());
                 } else if (index == 1) {
 
-                    setForm(new Form_1());
+                    setForm(new ViewKichThuoc());
                 } else if (index == 2) {
-                    setForm(form2);
+                    setForm(new ViewChatLieu());
                 } else if (index == 3) {
                     setForm(form3);
                 } else if (index == 4) {
@@ -70,17 +71,18 @@ public class Main extends javax.swing.JFrame {
                     setForm(form5);
                 } else if (index == 6) {
                     setForm(form6);
-                } else if (index == 10) {
-                    setForm(form10);
-                } else if (index == 11) {
-                    setForm(form11);
-                } else if (index == 12) {
-                    setForm(form12);
-                } else if (index == 13) {
-                    setForm(form13);
-                } else if (index == 14) {
-                    setForm(form14);
                 }
+//                } else if (index == 10) {
+//                    setForm(form10);
+//                } else if (index == 11) {
+//                    setForm(form11);
+//                } else if (index == 12) {
+//                    setForm(form12);
+//                } else if (index == 13) {
+//                    setForm(form13);
+//                } else if (index == 14) {
+//                    setForm(form14);
+//                }
             }
         });
         //  set when system open start with home form
@@ -108,6 +110,7 @@ public class Main extends javax.swing.JFrame {
 
         panelBorder1.setBackground(new java.awt.Color(246, 242, 242));
 
+        mainPanel.setBackground(new java.awt.Color(204, 204, 204));
         mainPanel.setOpaque(false);
         mainPanel.setLayout(new java.awt.BorderLayout());
 

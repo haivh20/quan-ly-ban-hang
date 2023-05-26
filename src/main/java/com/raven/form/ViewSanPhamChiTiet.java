@@ -8,12 +8,12 @@ package com.raven.form;
  *
  * @author haiz2
  */
-public class Form_0 extends javax.swing.JPanel {
+public class ViewSanPhamChiTiet extends javax.swing.JPanel {
 
     /**
-     * Creates new form Form_0
+     * Creates new form Form_2
      */
-    public Form_0() {
+    public ViewSanPhamChiTiet() {
         initComponents();
     }
 
@@ -28,25 +28,22 @@ public class Form_0 extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setText("Form_0");
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Quản Lý Nhân Viên");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(583, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(524, 524, 524))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1189, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(292, 292, 292)
-                .addComponent(jLabel1)
-                .addContainerGap(361, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 610, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

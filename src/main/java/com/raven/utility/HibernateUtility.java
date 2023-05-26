@@ -33,7 +33,7 @@ public class HibernateUtility {
         Properties properties = new Properties();
         properties.put(Environment.DIALECT, "org.hibernate.dialect.SQLServerDialect");
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=SaleSystemDB");
+        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=SALE_DATABASE");
         properties.put(Environment.USER, "sa");
         properties.put(Environment.PASS, "root");
         properties.put(Environment.SHOW_SQL, "true");
